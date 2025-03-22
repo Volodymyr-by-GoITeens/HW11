@@ -3,10 +3,10 @@
 body {
     display: block;
 }
-div > h1 {
+div.skib {
     width: 350px;
     height: 220px;
-    padding: 15px, 10px, 20px;
+    padding: 15px 10px 20px;
     margin: 30px;
     border: 2px dotted red;
     background-color: green;
@@ -16,10 +16,13 @@ button.button {
     background-color: midnightblue;
     color: antiquewhite;
 }
-button.button:hover {
+button.button:active {
     color: midnightblue;
     background-color: antiquewhite;
     border-radius: 36%;
+}
+button.button:hover {
+    cursor: pointer;
 }
 .hidden {
     display: none;
@@ -27,6 +30,7 @@ button.button:hover {
 img {
     width: 600px;
     border-radius: 16%;
+    cursor: move;
 }
 div.tabs div.pane {
     margin: 40px;
@@ -38,6 +42,7 @@ div.tabs div.pane p {
     border: 5px solid darkgoldenrod;
     background-color: rgb(180, 180, 0);
     font-family: "Roboto Condensed", serif;
+    cursor: default;
 }
 div.tabs div.pane p:hover {
     border: 5px solid rgb(197, 145, 12);
