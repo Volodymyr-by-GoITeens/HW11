@@ -1,28 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-body {
-    display: block;
-}
-div.skib {
+.skib {
+    box-sizing: border-box;
     width: 350px;
     height: 220px;
     padding: 15px 10px 20px;
-    margin: 30px;
+    margin-bottom: 30px;
     border: 2px dotted red;
     background-color: green;
 }
-button.button {
+button {
     margin-top: auto;
     text-align: center;
     background-color: midnightblue;
     color: antiquewhite;
 }
-button.button:active {
+button:active {
     color: midnightblue;
     background-color: antiquewhite;
     border-radius: 36%;
 }
-button.button:hover {
+button:hover {
     cursor: pointer;
 }
 .hidden {
@@ -33,7 +31,7 @@ img {
     border-radius: 16%;
     cursor: move;
 }
-div.tabs div.pane {
+.pane {
     width: 650px;
     margin: 40px;
     padding: 11px;
@@ -41,13 +39,13 @@ div.tabs div.pane {
     background-color: yellow;
     align-items: center;
 }
-div.tabs div.pane p {
+p {
     border: 5px solid darkgoldenrod;
     background-color: rgb(180, 180, 0);
     font-family: "Roboto Condensed", serif;
     cursor: default;
 }
-div.tabs div.pane p:hover {
+p:hover {
     border: 5px solid rgb(197, 145, 12);
     background-color: rgb(221, 221, 0);
     font-family: "Lato", serif;
